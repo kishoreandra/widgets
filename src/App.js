@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./components/Accordion";
+import Search from "./components/Search";
 
 const iplInfo = [
   {
@@ -16,7 +17,8 @@ const iplInfo = [
   },
 ];
 const App = () => {
-  return <Accordion iplInfo={iplInfo} />;
+  // return <Accordion iplInfo={iplInfo} />;
+  return <Search />;
 };
 
 export default App;

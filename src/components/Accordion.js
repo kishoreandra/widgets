@@ -22,11 +22,7 @@ const Accordion = ({ iplInfo }) => {
     );
   });
 
-  return (
-    <div className="ui inverted segment">
-      <div className="ui inverted accordion">{renderedList}</div>
-    </div>
-  );
+  return <div className="ui styled accordion">{renderedList}</div>;
 };
 
 export default Accordion;
