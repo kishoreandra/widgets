@@ -42,7 +42,7 @@ const options = [
   {
     label: "KKR",
     value: "kkr",
-    color: "gold",
+    color: "goldenrod",
   },
   {
     label: "RR",
@@ -72,9 +72,9 @@ const App = () => {
         selected={selected}
         onSelectedChange={setSelected}
       />
-      <div style={{ color: `${selected.color}` }}>
+      <h2 style={{ color: `${selected.color}` }}>
         The {selected.label} jersey is colored {selected.color}
-      </div>
+      </h2>
     </div>
   );
 };
