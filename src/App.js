@@ -22,34 +22,42 @@ const options = [
   {
     label: "RCB",
     value: "rcb",
+    color: "red",
   },
   {
     label: "MI",
     value: "mi",
+    color: "blue",
   },
   {
     label: "DC",
     value: "dc",
+    color: "brown",
   },
   {
     label: "CSK",
     value: "csk",
+    color: "yellow",
   },
   {
     label: "KKR",
     value: "kkr",
+    color: "gold",
   },
   {
     label: "RR",
     value: "rr",
+    color: "darkblue",
   },
   {
     label: "SRH",
     value: "srh",
+    color: "orange",
   },
   {
     label: "KXIP",
     value: "kxip",
+    color: "pink",
   },
 ];
 
@@ -58,11 +66,16 @@ const App = () => {
   // return <Accordion iplInfo={iplInfo} />;
   // return <Search />;
   return (
-    <Dropdown
-      options={options}
-      selected={selected}
-      onSelectedChange={setSelected}
-    />
+    <div>
+      <Dropdown
+        options={options}
+        selected={selected}
+        onSelectedChange={setSelected}
+      />
+      <div style={{ color: `${selected.color}` }}>
+        The {selected.label} jersey is colored {selected.color}
+      </div>
+    </div>
   );
 };
 
