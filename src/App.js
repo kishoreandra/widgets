@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 const iplInfo = [
   {
@@ -62,21 +63,23 @@ const options = [
 ];
 
 const App = () => {
-  const [selected, setSelected] = useState(options[0]);
+  // const [selected, setSelected] = useState(options[0]);
   // return <Accordion iplInfo={iplInfo} />;
   // return <Search />;
-  return (
-    <div>
-      <Dropdown
-        options={options}
-        selected={selected}
-        onSelectedChange={setSelected}
-      />
-      <h2 style={{ color: `${selected.color}` }}>
-        The {selected.label} jersey is colored {selected.color}
-      </h2>
-    </div>
-  );
+  // return (
+  //   <div>
+  //     <Dropdown
+  //       options={options}
+  //       selected={selected}
+  //       onSelectedChange={setSelected}
+  //       label = 'Select a Team'
+  //     />
+  //     <h2 style={{ color: `${selected.color}` }}>
+  //       The {selected.label} jersey is colored {selected.color}
+  //     </h2>
+  //   </div>
+  // );
+  return <Translate />;
 };
 
 export default App;
